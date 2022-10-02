@@ -124,3 +124,5 @@ nav li {
 }
 
 .footer[lang="en"] { font-family: 'Noto Sans Mono', monospace; }
+
+.footer a { color: var(--background-color) }
