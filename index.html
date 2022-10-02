@@ -1,0 +1,125 @@
+<!--
+    Flex-box and grid for macro-level layout
+        x
+    Margins and padding for micro-level positioning.
+        71 - 86, 110 - 114
+    Semantic HTML elements (i.e. <nav>, <article>, etc.)
+        60 - 66, 
+    CSS reset and / or defaults.
+        *
+    Both images and text.
+        72 - 84
+    Both good color and good typography.
+        x
+    A google font (or two).
+        47 - 49
+    Font-awesome icons or html entities
+        93 - 105
+    A list of some kind.
+        110 - 114
+    Navigation to two fake pages.
+        *
+    Copyright in the footer.
+        123
+    Inline anchor links in the body text.
+        62 - 65
+    Hover effects on both images and links.
+        css/style.css 42, 56, 79, 107
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- metadata -->
+        <title>Ethan Arnold COMM329 Tribute</title>
+        <meta charset="UTF-8">
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Google fonts
+            Noto Sans       400
+            Noto Sans Mono  300, 900
+            Noto Sans SC    400, 900
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Mono:wght@300;900&family=Noto+Sans+SC:wght@400;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- bold title -->
+        <div class="title">
+            <span id="hover">民主</span>女神<br>
+            中国北京<br>
+        </div>
+
+        <!-- navbar -->
+        <nav>
+            <ul>
+                <li><a href="#zhaopian">照片</a></li> |
+                <li><a href="#xiangyao">人民想要的</a></li> |
+                <li><a href="#wenti">问题</a></li> |
+                <li><a href="#humanrights">世界人权宣言</a></li>
+            </ul>
+        </nav><br>
+
+        <!-- gallery -->
+        <div class="gallery" id="zhaopian">
+            <figure>
+                <img src="img\renmen.jpg"><!-- whitespace hack
+                --><figcaption>人民抗议他们的政府</figcaption>
+            </figure>
+            <figure>
+                <img src="img\statue.jpg">
+                <figcaption>民主女神</figcaption>
+            </figure>
+            <figure>
+                <img src="img\tankman.jpg">
+                <figcaption>一位人站在坦克前</figcaption>
+            </figure>
+            <figure>
+                <img src="img\manytanks.png">
+                <figcaption>在北京有很多坦克</figcaption>
+            </figure>
+        </div><!-- /gallery -->
+        
+        <div class="content">
+            <h1 id="wenti">1989年6月4日在天安门人民抗议他们的政府。那天，很多坦克来了北京。</h1>
+            <div class="buttons">
+                <div class="buttonLink">
+                    为什么？<span class="arrow">&rarr;</span>
+                </div>
+                <div class="buttonLink">
+                    什么时候？<span class="arrow">&rarr;</span>
+                </div>
+                <div class="buttonLink">
+                    哪儿？<span class="arrow">&rarr;</span>
+                </div>
+                <div class="buttonLink">
+                    怎么？<span class="arrow">&rarr;</span>
+                </div>
+                <div class="buttonLink">
+                    谁？<span class="arrow">&rarr;</span>
+                </div>
+            </div><!-- /buttons -->
+
+            <h2 id="xiangyao">人民想要的</h2>
+            <ul>
+                <li>人生</li>
+                <li>民主</li>
+                <li>幸福</li>
+            </ul>
+
+            <h2 id="humanrights">世界人权宣言</h2>
+            <p>
+                人人生而自由，在尊严和权利上一律平等。他们赋有理性和良心，并应以兄弟关系的精神相对待。
+            </p>
+        </div><!-- /content -->
+
+        <!-- footer -->
+        <div class="footer" lang="en">Ethan Arnold 2022</div>
+    </body>
+</html>

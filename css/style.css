@@ -1,0 +1,126 @@
+:root {
+
+    --color: rgb(0, 0, 0);
+    --color-2:rgb(128, 128, 128);
+    --background-color: rgb(255, 255, 255);
+    --background-color-2:rgb(223, 223, 223);
+    
+}
+
+[lang="en"] { font-family: 'Noto Sans', sans-serif; } /* latin characters */
+
+body {
+
+    /* form */
+    margin: 0;
+    padding: 0;
+
+    /* color */
+    color: var(--color);
+    background-color: var(--background-color);
+
+    /* text */
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.content { padding: 40px 80px; } /* keep stuff from touching the walls */
+
+.title { /* big text at top */
+
+    /* form */
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 40px;
+
+    /* text */
+    line-height: 1;
+    text-align: center;
+    font-size: 8em;
+    font-weight: 900;
+}
+#hover:hover { text-shadow: 4px 4px rgb(128, 0, 0); } /* do you like this? */
+
+.gallery { /* image gallery */
+
+    /* form */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img { height: 240px; display: block; } /* images within gallery */
+.gallery figure { margin: 0; border-radius: 4px; overflow: hidden; }
+.gallery figcaption:hover { background-color: var(--background-color-2); color: var(--color) }
+.gallery figcaption {
+
+    /* color */
+    color: var(--background-color);
+
+    /* form */
+    background-color: var(--color);
+    padding: 4px;
+    display: block;
+}
+
+.buttons { /* flex container for buttons */
+    
+    /* form */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    /* text */
+    font-size: 1em;
+}
+
+.buttonLink:hover { background-color: var(--color); color: var(--background-color); }
+.buttonLink {
+
+    /* color */
+    background-color: var(--background-color-2);
+    
+    /* form */
+    padding: 10px;
+    border-radius: 10px;
+    width: 180px;
+}
+
+.buttonLink .arrow { float: right; } /* arrow on right side of button */
+
+.footer {
+
+    /* form */
+    width: 100%;
+    
+    /* text */
+    text-align: center;
+    
+    /* color */
+    background-color: var(--color);
+    color: var(--background-color);
+}
+
+nav { text-align: center; font-size: 2em; font-weight: bold; } /* navbar that appears in center */
+nav a:hover { color: var(--color-2); text-decoration: underline; }
+nav a {
+
+    /* text */
+    text-decoration: none;
+
+    /* color */
+    color: var(--color);
+}
+nav ul {
+    margin: 0;
+    display: inline;
+    list-style-type: none;
+}
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.footer[lang="en"] { font-family: 'Noto Sans Mono', monospace; }
